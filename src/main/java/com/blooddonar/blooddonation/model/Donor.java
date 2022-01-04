@@ -11,7 +11,20 @@ public class Donor {
     private String name;
     private int age;
     private String address;
+    private String contact;
     private String bloodgrp;
+
+
+
+    public Donor(String name, int age, String address, String contact, String bloodgrp) {
+        this.name = name;
+        this.age = age;
+        this.address = address;
+        this.contact = contact;
+        this.bloodgrp = bloodgrp;
+    }
+
+
 
     public Donor() {
     }
@@ -53,5 +66,12 @@ public class Donor {
 
     public void setBloodgrp(String bloodgrp) {
         this.bloodgrp = bloodgrp;
+    }
+    public String getContact() {
+        return contact;
+    }
+
+    public void setContact(String contact) {
+        this.contact = contact;
     }
 }
